@@ -17,16 +17,15 @@ class Search extends Component {
                 <TextInput 
                     placeholder="Search here"
                     placeholderTextColor="#000"
-                    color="#f4bf06"
                     autoCapitalize="none"
-                    style={{flex:1,padding:0,borderColor:"#f4bf06"}}
+                    style={{flex:1,padding:0}}
                     onChangeText={(text) => this.setState({text})}
                     value = {this.state.text}
                     onSubmitEditing={(event) => this.props.onSubmitEditing(event, this.state.text)}
                 >
                     
                 </TextInput>
-                <Ionicons name="search" size={24} color="black" style={styles.searchIcon} />
+                <Ionicons name="search" size={24} onPress={() => {this.props.showFilters()}} color="black" style={styles.searchIcon} />
             </View>
         );
     }

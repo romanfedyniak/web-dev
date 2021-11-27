@@ -1,8 +1,9 @@
-import { Polyline, Geojson } from 'react-native-maps';
+import { Polyline, Geojson, Marker } from 'react-native-maps';
 import { Alert, View } from 'react-native';
 import React, { Component } from 'react';
 
 const token = "5b3ce3597851110001cf62482aaf657c34df44068c64b8e72e426522";
+const markerIcon = require("./assets/markerDirection.png");
 
 class Direction extends Component {
   constructor(props) {
@@ -49,6 +50,8 @@ class Direction extends Component {
     return (
       <View>
         { this.state.makedPath && <Polyline coordinates={this.state.coords} lineDashPattern={[10]} strokeColor="red" strokeWidth={10}/> }
+        { this.state.makedPath && <Marker coordinate={this.state.coords[0]} icon={markerIcon}/>}
+        { this.state.makedPath && <Marker coordinate={this.state.coords[this.state.coords.length-1]} icon={markerIcon}/>}
       </View>
     )
   }
