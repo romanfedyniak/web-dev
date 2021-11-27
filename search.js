@@ -17,8 +17,9 @@ class Search extends Component {
                 <TextInput 
                     placeholder="Search here"
                     placeholderTextColor="#000"
+                    color="#f4bf06"
                     autoCapitalize="none"
-                    style={{flex:1,padding:0}}
+                    style={{flex:1,padding:0,borderColor:"#f4bf06"}}
                     onChangeText={(text) => this.setState({text})}
                     value = {this.state.text}
                     onSubmitEditing={(event) => this.props.onSubmitEditing(event, this.state.text)}
@@ -45,7 +46,7 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.5,
         shadowRadius: 5,
         elevation: 10,
-        backgroundColor: '#fff',
+        backgroundColor: "#f4bf06",
       },
       searchIcon:{
         alignSelf:'center',
