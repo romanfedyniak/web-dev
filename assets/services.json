@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "Сервісні центри для електросамокатів",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "ELECTRO LVIV", "description": "Ремонт, магазин деталей та аксесуарів для електросамокатів.", "tessellate": -1, "extrude": 0, "visibility": -1 }, "geometry": { "type": "Point", "coordinates": [ 24.0171464, 49.8088029, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Ваш сервіс", "description": "Ремонт електросамокатів та цифрової техніки.", "tessellate": -1, "extrude": 0, "visibility": -1 }, "geometry": { "type": "Point", "coordinates": [ 24.0152476, 49.8438243, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "MobiDO", "description": "Сервісний центр електротехніки", "tessellate": -1, "extrude": 0, "visibility": -1 }, "geometry": { "type": "Point", "coordinates": [ 24.0253784, 49.8415876, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Contact", "description": "Сервісний центр", "tessellate": -1, "extrude": 0, "visibility": -1 }, "geometry": { "type": "Point", "coordinates": [ 24.0203946, 49.8465474, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "MOTO LVIV", "tessellate": -1, "extrude": 0, "visibility": -1 }, "geometry": { "type": "Point", "coordinates": [ 23.9085815, 49.8256786, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Edrive-lviv", "description": "Сервісний центр електротранспорту", "tessellate": -1, "extrude": 0, "visibility": -1 }, "geometry": { "type": "Point", "coordinates": [ 24.0267157, 49.8159815, 0.0 ] } }
+]
+}
